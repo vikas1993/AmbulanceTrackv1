@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_location_update"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vicky.ifeelsafe.LocationUpdateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LL1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
+        android:weightSum="4">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Mobile No:"
+        />
+    <EditText
+        android:id="@+id/editTextMob"
+        android:inputType="number"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mobile No"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_tracking_details"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/LL1"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#0d4b89"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tracking Details"
+     />
+    <TextView
+        android:id="@+id/text_timestamp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/text_tracking_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Updated :"
+        />
+    <TextView
+        android:id="@+id/text_location_points"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/text_timestamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pending points :"
+        />
+    <TextView
+        android:id="@+id/text_tracking_updates"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_location_points"
+        android:text="Updating Details"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+    <Button
+        android:id="@+id/button_tracking"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="START TRAKING"
+        android:textAllCaps="true"
+
+        android:textStyle="bold|italic"
+         />
+    <Button
+        android:id="@+id/button_history"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Edit Number"
+        android:textAllCaps="true"
+
+        android:textStyle="bold|italic"
+        />
+     </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="bottom|end|right"
+        android:src="@android:drawable/ic_menu_add"
+        android:layout_marginRight="41dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="41dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout" />
+</RelativeLayout>

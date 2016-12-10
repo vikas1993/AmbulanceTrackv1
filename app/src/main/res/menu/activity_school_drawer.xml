@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_school"
+            android:title="School" />
+        <item
+            android:id="@+id/nav_Branches"
+            android:title="School Branches" />
+        <item
+            android:id="@+id/nav_Circular_Activities"
+            android:title="Circular Activities" />
+        <item
+            android:id="@+id/nav_Addmission_Student"
+            android:title="Addmission Student" />
+
+
+    </group>
+
+
+</menu>

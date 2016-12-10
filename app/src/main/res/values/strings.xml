@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Park Hospital</string>
+    <string name="err_msg_mobile">Not Valid Mobile No</string>
+
+</resources>
